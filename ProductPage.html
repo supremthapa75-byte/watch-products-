@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <link rel="stylesheet" href="../Development/styles.css">
+    <link rel="icon" type="image/png" href="../Development/WebIcon/icon.png">
+    <meta name="author" content="Supreme Thapa">
+</head>
+
+<style>
+
+
+.one{
+    float:left;
+    padding: 20px;
+    align-items: center;
+}
+.bodypro{
+    display:block;
+    padding-left: 14%;
+}
+.Product, .product2{
+    display: inline-block;
+}
+
+.product2{
+    padding-left:14%;
+}
+button{
+     background-color: orange;
+     width: 150px;
+     height: 40px;
+     border-radius: 25px;
+     border: none;  
+}
+button:hover{
+      background-color: white;
+      width: 160px;
+      color:black;
+}
+img{
+   border:  2px ridge white;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+   
+}
+h{
+     font-size: 25px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bodypro, .Product, .product2, .one{
+    background: transparent;
+}
+
+form{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: stretch;
+    flex-direction: column;
+    padding:30px;
+}
+</style>
+
+<body>
+         <!-- Navigation bar -->
+        <div class="bg-try">
+            <nav>
+                <div class="logo">
+                    <h1>Branded Watch Shop</h1>
+                </div>
+                <ul>
+                    <li>
+                        <a id="home" href="../Development/index.html">Home</a>
+                        <a id="blog" href="../Development/Blogpage.html">Blog</a>
+                        <a id="products" href="../Development/ProductPage.html">Product Page</a>
+                        <a id="research" href="../Development/ResearchPage.html">Research</a>
+                        <a id="about" href="../Development/aboutus.html">About us</a>
+                    </li>
+                </ul>
+            </nav>
+        <!-- Products Listings -->
+        <div class="bodypro">
+            <div class="Product">
+                <div class="one" ><img src="../Development/Watch_Images/pozo_watch.png" style="height:300px; width:300px;"  alt="Pozo watch"> 
+                    <figcaption  style="border: 2px;"> 
+                        <center> <h>Pozo </h></center>
+                        <center>The Pozo watch combines sleek <br> modern design with exceptional <br> craftsmanship, making it a perfect <br> blend of style and functionality.
+                        </center> </figcaption><br>
+                    <center> <h>Rs 15,000</h> <button onclick="addtocart()"> Add to cart</button><p>Price: <del>Rs 15,000</del> <span style="color: red;">Rs 14,500</span></p></center>
+                </div>
+                <div class="one"><img src="../Development/Watch_Images/rolex_watch.jpeg" style="height:300px; width:300px;" alt="Rolex eatch"> 
+                    <figcaption>
+                        <center> <h>Rolex </h></center>
+                        <center>The Rolex watch epitomize luxury <br> and precision, renowned for<br> its timeless design and <br>unparalleled craftsmanship.
+                    </center> </figcaption><br>
+                <center> <h>Rs 145,000</h> <button onclick="addtocart()"> Add to cart</button><p>Price: <del>Rs 145,000</del> <span style="color: red;">Rs 135,000</span></p></center>
+                </div>
+                </div>
+                <div class="one" ><img src="../Development/Watch_Images/gshock_watch.jpeg" style="height:300px; width:300px;" alt="G-Shock watch">
+                    <figcaption > 
+                        <center> <h>G-Shock</h></center>
+                        <center>The G-Shock watch is a rugged <br>blend of durability and innovation, <br>designed for ultimate functionality <br>and tough performance.
+                    </center> </figcaption><br>
+                    <center> <h>Rs 1,200</h> <button onclick="addtocart()"> Add to cart</button><p>Price: <del>Rs 1,200</del> <span style="color: red;">Rs 1,150</span></p></center>
+                </div>
+                <div class="one" ><img src="../Development/Watch_Images/iwatchs6_watch.jpg" style="height:300px; width:300px;" alt="I-watch series watch">
+                    <figcaption  style="border: 2px;"> 
+                        <center> <h>I-watch series</h></center>
+                        <center>The Apple Watch Series <br> seamlessly merges cutting-edge technology <BR>with sleek design, offering <br>unmatched functionality and style.
+                    </center> </figcaption><br>
+                    <center> <h>Rs 30,000</h> <button onclick="addtocart()"> Add to cart</button><p>Price: <del>Rs 30,000</del> <span style="color: red;">Rs 25,000</span></p></center>
+                </div>
+                </div><br>
+            <div class="product2">
+                <div class="one" ><img src="../Development/Watch_Images/boatwave_watch.jpeg" style="height:300px; width:300px;" alt="Boat wave watch">
+                    <figcaption  style="border: 2px so;"> 
+                        <center> <h>Boat wave</h></center>
+                        <center> The Boat watch combines stylish  <br>design with smart features, delivering <br>a perfect blend of fashion and <br>functionality for everyday wear.
+                    </center></figcaption><br>
+                    <center> <h>Rs 3,500</h> <button onclick="addtocart()"> Add to cart</button><p>Price: <del>Rs 3,500</del> <span style="color: red;">Rs 3,000</span></p></center>
+                </div>
+                <div class="one"><img src="../Development/Watch_Images/radoprime_watch.jpg" style="height:300px; width:300px;" alt="Rado prime watch">
+                    <figcaption  style="border: 2px so;"> 
+                        <center> <h>rado prime</h></center>
+                        <center>The Rado Prime watch embodies timeless <br>elegance and innovative design, <br>crafted with precision for those who <br>appreciate luxury and sophistication.
+                    </center></figcaption><br>
+                    <center> <h>Rs 55,000</h> <button onclick="addtocart()"> Add to cart</button><p>Price: <del>Rs 55,000</del> <span style="color: red;">Rs 45,000</span></p></center>
+                </div>
+                <div class="one"><img src="../Development/Watch_Images/boatflash_watch.jpeg" style="height:300px; width:300px;" alt="Boat flash watch">
+                    <figcaption  style="border: 2px so;"> 
+                        <center> <h>boat flash</h></center>
+                        <center> The Boat Flash watch combines vibrant <br>design with smart technology, <br>offering a perfect blend of style <br>and functionality for the modern lifestyle.
+                    </center></figcaption><br>
+                    <center><h>Rs 4,500</h> <button onclick="addtocart()"> Add to cart</button><p>Price: <del>Rs 4,500</del> <span style="color: red;">Rs 4,000</span></p></center>
+                </div>
+                <div class="one" ><img src="../Development/Watch_Images/ben10.png" style="height:300px; width:300px;" alt="Ben10 the crazy watch"> 
+                    <figcaption  style="border: 2px so;"> 
+                        <center> <h>Ben10 the crazy</h></center>
+                        <center>The Ben 10 Crazy watch captures the adventurous <br>spirit with its bold design <br>and fun features, perfect for f<br>ans of action and imagination.
+                    </center></figcaption><br>
+                    <center><h>Rs 200,000</h>  <button onclick="addtocart()"> Add to cart</button><p>Price: <del>Rs 200,000</del> <span style="color: red;">Rs 185,000</span></p></center>
+                </div>
+            </div><br>
+            <div class="product2">
+                <div class="one" ><img src="../Development/Watch_Images/patek,jpg.jpg" style="height:300px; width:300px;" alt="Patek watch">
+                    <figcaption  style="border: 2px so;"> 
+                        <center> <h> Patek phillip</h></center>
+                        <center> Patek Philippe watches are renowned for <br> exceptional craftsmanship,<br> and status as one of <br>the most prestigious luxury<br> timepieces in the world.
+                    </center></figcaption><br>
+                    <center> <h>Rs 250,000</h> <button onclick="addtocart()"> Add to cart</button><p>Price: <del>Rs 250,000 </del> <span style="color: red;">Rs 200,000</span></p></center>
+                </div>
+                <div class="one"><img src="../Development/Watch_Images/naviforce.jpg" style="height:300px; width:300px;" alt="navi timer watch">
+                    <figcaption  style="border: 2px so;"> 
+                        <center> <h>navitimer classic</h></center>
+                        <center>Navitimer watches by Breitling are iconic <br>aviation timepieces, celebrated for their<br> precision, functionality, <br>and distinctive slide for <br> pilots and enthusiasts alike.
+                    </center></figcaption><br>
+                    <center> <h>Rs 500,000</h> <button onclick="addtocart()"> Add to cart</button><p>Price: <del>Rs 500,000</del> <span style="color: red;">Rs 400,000</span></p></center>
+                </div>
+                <div class="one"><img src="../Development/Watch_Images/minifocuswatch.jpg" style="height:300px; width:300px;" alt="mini focus ladies watch">
+                    <figcaption  style="border: 2px so;"> 
+                        <center> <h>Mini focus</h></center>
+                        <center> Mini Focus watches are stylish and <br>affordable timepieces, known for their <br>modern designs <br>and reliable performance,<br> catering to everyday wearers.
+                    </center></figcaption><br>
+                    <center><h>Rs 150,000</h> <button onclick="addtocart()"> Add to cart</button><p>Price: <del>Rs 150,000</del> <span style="color: red;">Rs 100,000</span></p></center>
+                </div>
+                <div class="one" ><img src="../Development/Watch_Images/skmei.jpg" style="height:300px; width:300px;" alt="skmei watch"> 
+                    <figcaption  style="border: 2px so;"> 
+                        <center> <h> Sekim the rise</h></center>
+                        <center>Sikim watches are contemporary<br> and budget-friendly,<br> offering sleek<br> designs and practical functionality<br> for everyday use.
+                    </center></figcaption><br>
+                    <center><h>Rs 465,000</h>  <button onclick="addtocart()"> Add to cart</button><p>Price: <del>Rs 465,000</del> <span style="color: red;">Rs 300,000</span></p></center>
+                <div>
+                </div>
+                </div>
+</div>
+<div class="container">
+    <h1 style="padding-left:30px; margin-top:20px;">Product Reviews</h1>
+    <form id="reviewForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+            <option value="1">1 Star</option>
+            <option value="2">2 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="5">5 Stars</option>
+        </select>
+        <br>
+        <label for="comment">Comment:</label>
+        <textarea id="comment" name="comment" required></textarea>
+        <br>
+        <button onclick="review_msg()" type="submit">Submit Review</button>
+    </form>
+
+    <div id="reviews">
+        <!-- Reviews will be dynamically inserted here -->
+    </div>
+</div>
+            <!-- Footer -->
+            <div class="footer">
+                <div class="Ftext">
+                    <h1>Branded Watch Shop</h1>
+                    <p>Your trusted destination for branded watches.</p>
+                </div>
+                <div class="Ftext">
+                    <h3>Contact Us</h3>
+                    <p>Email: bws.customer.support@gmail.com</p>
+                    <p>Phone: +977 01-452145</p>
+                    <p>Location: Kamalpokhari, Kathmandu</p>
+                </div>
+            <div class="Ftext">
+                <h3>Quick Links</h3>
+                <p><a href="../Development/index.html">Home</a></p>
+                <p><a href="../Development/Blogpage.html">Blog</a></p>
+                <p><a href="../Development/ProductPage.html">Product Page</a></p>
+                </div>
+            </div>
+
+<script src="../Development/script.js"></script>
+</body>
+</html>

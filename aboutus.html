@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sankhar Thapa">
+    <title>About Us</title>
+    <link rel="stylesheet" href="../Development/styles.css">
+    <link rel="icon" type="image/png" href="../Development/WebIcon/icon.png">
+    <style>
+        /* Internal CSS for profile cards */
+       .profile-card {
+            padding: 20px;
+            margin: 20px;
+            transition: transform 0.3s;
+            display: flex;
+        }
+
+        body {
+            font-family: Segoe UI;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: transparent;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            color: black;
+            text-align: center;
+        }
+
+        aside {
+            background: transparent;
+            padding-left: 500px;
+            padding-right: 500px;
+            border-radius: 8px;
+            margin-top:  20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background: orange;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: grey;
+            color:orange;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .team-mem{
+            width: 300px;
+            height: 300px;
+        }
+        .team-mem a{
+            text-decoration: none;
+            color:black;
+        }
+        .team-mem{
+            margin-right:200px;
+        }
+        .team-mem:hover{
+            transform: scale(1.05);
+        }
+        image{
+            padding: 20px;
+            width: fit-content;
+        }
+        hr{
+            width: 200px;
+            margin: 10px auto;
+        }
+        .members{
+            display: flex;
+        }
+
+        img{
+            width: 250px;
+            height: 250px;
+            margin: 5px;
+        }
+        p{
+            text-align: left;
+            font-size: 12px;
+            margin: 0px;
+        }
+        .foot{
+            text-align:center;
+        }
+
+        #done{
+            background-color:orange;
+            color:black;
+        }
+
+        #done:hover{
+            background-color: white;
+            color:black;
+        }
+
+    </style>
+
+</head>
+<body>
+        <!-- Navigation bar -->
+        <div class="bg-try">
+            <nav>
+                <div class="logo">
+                    <h1>Branded Watch Shop</h1>
+                </div>
+                <ul>
+                    <li>
+                        <a id="home" href="../Development/index.html">Home</a>
+                        <a id="blog" href="../Development/Blogpage.html">Blog</a>
+                        <a id="products" href="../Development/ProductPage.html">Product Page</a>
+                        <a id="research" href="../Development/ResearchPage.html">Research</a>
+                        <a id="about" href="../Development/aboutus.html">About us</a>
+                    </li>
+                </ul>
+            </nav>
+
+    <header>
+    <h1>About Us</h1>
+    </header>
+    <main>
+    <h2>Meet Our Team Members</h2>
+    <hr>
+        <section>
+            <div class="profile-card" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                <!-- Inline Styling -->
+                <div class="members">
+                    <div class="team-mem">
+                        <a href="../Development/CV_HTML/CV_Deepesh.html"> <img src="../Development/Team_Members_Images/Deepesh.jpg"> </a>
+                        <h3><a href="../Development/CV_HTML/CV_Deepesh.html">Deepesh Shiwakoti</a></h3>
+                        <p><a href="../Development/CV_HTML/CV_Deepesh.html">Team Leader</a></p>
+                    </div>
+                </div>
+                <div class="members">
+                    <div class="team-mem">
+                        <a href="../Development/CV_HTML/CV_Shankar.html"><img src="../Development/Team_Members_Images/Shankar.jpeg"></a>
+                        <h3><a href="../Development/CV_HTML/CV_Shankar.html">Shankar Thapa</a></h3>
+                        <p><a href="../Development/CV_HTML/CV_Shankar.html">Member</a></p>
+                    </div>
+                </div>
+                <div class="members">
+                    <div class="team-mem">
+                        <a href="../Development/CV_HTML/CV_Suprem.html"><img src="../Development/Team_Members_Images/Supreme.jpg"></a>
+                        <h3><a href="../Development/CV_HTML/CV_Suprem.html">Supreme Thapa</h3></a>
+                        <p><a href="../Development/CV_HTML/CV_Suprem.html">Member</a></p>
+                    </div>
+                </div>
+                <div class="members">
+                    <div class="team-mem">
+                        <a href="../Development/CV_HTML/CV_Diya.html"><img src="../Development/Team_Members_Images/Diya.jpg"></a>
+                        <h3><a href="../Development/CV_HTML/CV_Diya.html">Diya Ranjit</a></h3>
+                        <p><a href="../Development/CV_HTML/CV_Diya.html">Member</a></p>
+                    </div>
+                </div>
+                
+            </div>
+            
+           
+            
+        </section>
+
+        <aside>
+            <!-- form with js implementation -->
+            <h2>Contact Us</h2>
+            <form name="messageForm" onsubmit="validateForm()">
+                <label>First Name: </label>
+                <input type="text" name="fname">
+
+                <label>Last Name: </label>
+                <input type="text" name="lname">
+
+                <label>Message:</label>
+
+                <textarea rows="5" cols="10" name="message" placeholder="Enter your message"></textarea>
+
+     
+                <input id="done" type="submit" value="Submit">
+            </form>
+        </aside>
+            <script src="../Development/script.js"></script>
+    </main>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="Ftext">
+                <h1>Branded Watch Shop</h1>
+                <p>Your trusted destination for branded watches.</p>
+            </div>
+            <div class="Ftext">
+                <h3>Contact Us</h3>
+                    <p>Email: bws.customer.support@gmail.com</p>
+                    <p>Phone: +977 01-452145</p>
+                    <p>Location: Kamalpokhari, Kathmandu</p>
+            </div>
+            <div class="Ftext">
+                <h3>Quick Links</h3>
+                <p><a href="../Development/index.html">Home</a></p>
+                <p><a href="../Development/Blogpage.html">Blog</a></p>
+                <p><a href="../Development/ProductPage.html">Product Page</a></p>
+            </div>
+        </div>
+</body>
+</html>
+    
+</body>
+</html>

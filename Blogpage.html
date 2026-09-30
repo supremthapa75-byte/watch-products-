@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title> BWS-Blog</title>  
+        <link rel="stylesheet" href="../Development/styles.css">
+        <link rel="icon" type="image/png" href="../Development/WebIcon/icon.png">
+        <meta name="author" content="Diya Ranjit">
+    </head>
+
+    <!-- Internal CSS -->
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+}  
+.header{
+    background-color: #fff;
+    color: rgb(2, 131, 131);
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+}
+.main-title{
+    font-family: Segoe UI;
+    font-size: 60px;
+    margin: auto;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: White;
+}
+.item{
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+}
+.image{
+    width: 180px;
+    height: auto;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+.textdiya{
+    flex: 1;
+    text-align: left;
+    margin-left: 20px;
+    color: black;
+}
+.section-title{
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+.read-more{
+    cursor: pointer;
+    color: darkslateblue;
+    text-decoration: underline;
+}
+.expanded{
+    max-height: none;
+    transition: max-height 0.5s ease-in-out;
+}
+.more-text{
+    display: none;
+    color: black;
+}
+
+    </style>
+
+<body>
+    <div class="bg-try">
+        <nav>
+                <div class="logo">
+                    <h1>Branded Watch Shop</h1>
+                </div>
+                <ul>
+                    <li>
+                        <a id="home" href="../Development/index.html">Home</a>
+                        <a id="blog" href="../Development/Blogpage.html">Blog</a>
+                        <a id="products" href="../Development/ProductPage.html">Product Page</a>
+                        <a id="research" href="../Development/ResearchPage.html">Research</a>
+                        <a id="about" href="../Development/aboutus.html">About us</a>
+                    </li>
+                </ul>
+        </nav>
+        <h1 class="main-title">Blog Page</h1>
+        <main>
+            <div class ="content" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                <!-- Inline styling -->
+                <article>
+                    <h2 class="section-title"> TECHNOLOGY OVERVIEW </h2>
+                    <div class="item">
+                        <img src="../Development/Watch_Images/apple-watch.png" alt="Image1watch"class="image">
+                        <div class="textdiya">
+                        <p>Our store provides the user with a responsive design which helps to elevate the user experience. It helps manage customer interactions and provides secure shopping experience. 
+                        <span class="more-text">Our responsive design helps to provide a seamless user experience.  </span>
+                        </p>             
+                        <span class="read-more">read more→</span>
+                        </div>
+                     </div>
+                     <h3 class="section-title"> POSITIVES </h3>
+                    <div class="item">
+                        <img src="../Development/Watch_Images/samsung_watch.png" alt="Image 2 watch" class="image"" alt="Image2watch"class="image">
+                        <div class="textdiya">
+                             <p>We incorporate eco-friendly materials and energy efficient mechanisms which not only help us to be more productive and improve our performance but also help us contribute to the planet. Our watches have different technical aspects incorporated in them such as health monitoring, navigation, long lasting battery life, enhanced resistance to water and shocks, etc.
+                         <span class="more-text"> Incorporating technology has helped ensure that our online store is always accessible and available so that our customers can visit our store as per their convenience.</span>
+                            </p> 
+                            <span class="read-more">read more→</span>
+                        </div>
+                    </div>
+                    <h4 class="section-title">NEGATIVES</h4>
+                        <div class="item">
+                            <img src="../Development/Watch_Images/google_watch.png"alt="Image3watch"class="image">
+                            <div class="textdiya">
+                                <p>However, incorporating such high-level technologies also comes with its own set of challenges. The cost of making these watches has become higher not only due to the technical aspect to it but also because of the time and effort put in by our design team. Often, handling refunds and returns online has become more difficult online due to technological problems and attempts of frauds. 
+                                    <span class="more-text"> It has also become a problem as it increases customer dissatisfaction and damages the brand's reputation. </span>
+                                </p> 
+                                <span class="read-more">read more→</span>
+                            </div>
+                        </div>
+                        <h4 class="section-title">IMPACT OF TECHNOLOGY IN SALES </h4>
+                        <div class="item">
+                            <img src="../Development/Watch_Images/rolex.png"alt="Image5watch"class="image">
+                            <div class="textdiya">
+                                <p>While adapting to the online business world had been hard but with time we adapted to the nuances of e-commerce. Our sales drastically increased as we reached a wider range of customers. It has also helped us know more about customer preferences, market trends and so much more, which has helped a lot in terms of business growth and customer service.
+                                    <span class="more-text"> Our customers have shown their appreciation for the detailed descriptions, high quality images, and customer reviews which have helped them decide their own purchase. </span>
+                                </p> 
+                                <span class="read-more">read more→</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                         <img src="../Development/Watch_Images/ben10.png"alt="Image3watch"class="image">
+                            <div class="textdiya">
+                                <p> Join the ranks of our satisfied customers who have discovered the perfect blend of tradition and innovation.</p>
+                            </div>
+                        </div>
+                    </article>
+            </div>
+        </main>
+    </div>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="Ftext">
+                <h1>Branded Watch Shop</h1>
+                <p>Your trusted destination for branded watches.</p>
+            </div>
+            <div class="Ftext">
+                <h3>Contact Us</h3>
+                    <p>Email: bws.customer.support@gmail.com</p>
+                    <p>Phone: +977 01-452145</p>
+                    <p>Location: Kamalpokhari, Kathmandu</p>
+            </div>
+            <div class="Ftext">
+                <h3>Quick Links</h3>
+                <p><a href="../Development/index.html">Home</a></p>
+                <p><a href="../Development/Blogpage.html">Blog</a></p>
+                <p><a href="../Development/ProductPage.html">Product Page</a></p>
+            </div>
+        </div>
+    </body>
+    <script>
+            document.querySelectorAll('.read-more').forEach(button =>{
+            button.addEventListener('click',function(){
+            const item = this.closest('.item');
+            const moretext = item.querySelector('.more-text');
+            item.classList.toggle('expanded');
+            
+            if (item.classList.contains('expanded')) {
+                moretext.style.display = 'inline';
+                this.textContent = 'read less';
+            } else{
+                moretext.style.display='none';
+                this.textContent = 'read more→';
+            }
+            });
+            });
+    
+    </script>
+</html>
